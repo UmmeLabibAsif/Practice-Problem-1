@@ -2,8 +2,8 @@
 function factorial ($input) {
     $result = 1;
 
-    for ($i = $input; $i > 0; $i--) {
-        $result = $result * $i;
+    for ($index = $input; $index > 0; $index--) {
+        $result = $result * $index;
     }
     return $result;
 }

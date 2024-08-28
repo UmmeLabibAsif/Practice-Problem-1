@@ -1,22 +1,20 @@
 <?php
-//this function returns all words that starts with the given criteria
-function startLetter ($text, $criteria) {
+// This function returns all words that start with the given starting letter
+function start_letter ($input, $starting_letter) {
     $result = array();
-    $wordsArray = str_word_count($text, 1);
-    //print_r($wordsArray);
+    $words = str_word_count($input, 1);
 
-    foreach ($wordsArray as $word) {
-        if ($word[0] == $criteria) {
+    foreach ($words as $word) {
+        if ($word[0] == $starting_letter) {
+            echo $word," ";
             array_push($result, $word);
     }
 }
     return $result;
 }
 
-$text = "Bobby bought a bunch of bright blue balloons for 
-his big birthday bash. 
+$input = "Bobby bought a bunch of bright blue balloons for his big birthday bash. 
 The beautiful balloons bounced briskly in the breeze.";
-$criteria = 'b';
-
-print_r(startLetter($text, $criteria));
+$starting_letter = 'b';
+print_r(start_letter($input, $starting_letter));
 ?>

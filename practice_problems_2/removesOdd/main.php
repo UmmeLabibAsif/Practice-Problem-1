@@ -1,25 +1,20 @@
 <?php
-$removesOdd = function (array $arr) {
-    $i = 0;
+$removes_odd = function (array $input) {
+    $counter = 0;
 
-    while (count($arr) > $i) {
-        if ($arr[$i] % 2 != 0) {
-            unset($arr[$i]);
-            $arr = array_values($arr);  
+    while (count($input) > $counter) {
+        if ($input[$counter] % 2 != 0) {
+            unset($input[$counter]);
+            $input = array_values($input);  
     } 
     else {
-    $i++;
+    $counter++;
     }
-   // echo "$i $arr[$i] \n";
 }
-   /* $filteredNumbers = array_filter($arr, function($value) {
-        return $value % 2 != 0;
-    });
-    return $filteredNumbers; */
-    $arr = array_values($arr);
-    return $arr;
+    $input = array_values($input);
+    return $input;
 };
 
-$arr = array(0, 1, 2, 3, 4, 5, 6, 7, 8, 13 ,9, 11, 102, 103, 104);
-print_r($removesOdd($arr));
+$input = array(0, 1, 2, 3, 4, 5, 6, 7, 8, 13 ,9, 11, 102, 103, 104);
+print_r($removes_odd($input));
 ?>

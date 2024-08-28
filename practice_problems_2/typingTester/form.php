@@ -1,4 +1,4 @@
-<textarea?php
+<?php
 session_start();
 
 //Setting the start time when the session is loaded
@@ -7,7 +7,7 @@ if (!isset($_SESSION['start_time'])) {
 }
 ?>
 
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang = "en">
 <head>
     <meta charset = "UTF-8">
@@ -19,9 +19,8 @@ if (!isset($_SESSION['start_time'])) {
     <p>Type the following passage quickly and acccurately for the Typing Speed Test</p>
     <blockquote>Bobby bought a bunch of bright blue balloons for his big birthday bash.</blockquote>
     <form action = "result.php" method = "post">
-        <textarea name = "typedText" rows = "5" cols = "50" required></textarea><br>
+        <textarea name = "typed_text" rows = "5" cols = "50" required></textarea><br>
         <button type = "submit"> submit</button>
     </form>
 </body>
 </html>
-</DOCTYPE html>
