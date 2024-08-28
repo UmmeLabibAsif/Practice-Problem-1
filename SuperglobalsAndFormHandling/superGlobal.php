@@ -12,14 +12,14 @@
         $email = $_POST['email'];
 
         if (!empty($name) && !empty($email)) {
-            echo "Name: " . htmlspecialchars($name) . "<br>";
-            echo "Email: " . htmlspecialchars($email) . "<br>";
+            echo "Name: " . ($name) . "<br>";
+            echo "Email: " . ($email) . "<br>";
         } else {
             echo "Please fill in both fields.";
         }
-    } else {
-        ?>
-
+    } 
+    else {
+    ?>
         <form action="" method="POST">
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="name" required><br><br>
@@ -27,7 +27,6 @@
             <input type="email" id="email" name="email" required><br><br>
             <button type="submit">Submit</button>
         </form>
-
         <?php
     }
     ?>

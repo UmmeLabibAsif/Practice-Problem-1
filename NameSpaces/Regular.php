@@ -1,6 +1,6 @@
 <?php
 
-namespace regular;
+namespace Regular;
 
 class User {
     public $name;
@@ -9,7 +9,7 @@ class User {
         $this->name = $name;
     }
 
-    public function getRole() {
+    public function get_role() {
         echo "Role is regular "  . "<br>";
     }
 }

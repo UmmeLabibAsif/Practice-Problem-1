@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         exit();
     } else {
         echo "Invalid username or password.";
-        echo '<br><a href="login.php">Try again</a>';
+        echo '<br><a href="sessionLogin.php">Try again</a>';
     }
 }
 ?>

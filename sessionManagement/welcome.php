@@ -15,7 +15,7 @@ if (isset($_SESSION['username'])) {
     <title>Welcome</title>
 </head>
 <body>
-    <h2>Welcome, <?php echo htmlspecialchars($username); ?>!</h2>
+    <h2>Welcome, <?php echo ($username); ?>!</h2>
     <p>You have successfully logged in.</p>
     <a href="logout.php">Logout</a>
 </body>
