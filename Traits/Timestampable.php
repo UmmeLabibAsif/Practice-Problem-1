@@ -1,5 +1,4 @@
 <?php
-
 trait Timestampable {
     public function getCreatedAt() {
         return date('d-m-Y H:i:s');
@@ -9,5 +8,4 @@ trait Timestampable {
         return date('d-m-Y H:i:s');
     }
 }
-
 ?>

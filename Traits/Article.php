@@ -3,7 +3,6 @@ require_once 'Timestampable.php';
 
 class Article {
     use Timestampable;
-
     public $title;
 
     public function __construct($title) {
@@ -14,5 +13,4 @@ class Article {
 $obj = new Article ("This is my first object");
 echo $obj->getCreatedAt() . "\n";
 echo $obj->getUpdatedAt();
-
 ?>
