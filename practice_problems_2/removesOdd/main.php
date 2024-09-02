@@ -8,7 +8,7 @@ $removes_odd = function (array $input) {
             $input = array_values($input);  
     } 
     else {
-    $counter++;
+        $counter++;
     }
 }
     $input = array_values($input);

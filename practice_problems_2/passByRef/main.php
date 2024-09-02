@@ -1,5 +1,5 @@
 <?php
-function double_val (&$input) {
+function double_val(&$input) {
     for ($index = 0; $index < count($input); $index++) {
         $input[$index] = $input[$index] * 2;
     }
